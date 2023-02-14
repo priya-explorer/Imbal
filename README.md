@@ -5,10 +5,10 @@
 ### Attrition is a metric that represents the percentage of employees who leave an organisation(either voluntarily or involuntarily) for reasons including resignation, termination, death or retirement. It is a key indicator used by HR department to monitor and improve their organisation's workforce planning and overall management.
 
 #### Why Does Attrition Rate Matter?
-Can have negative impact on your organization’s performance
-Struggle to recruit new people
-Hiring cost to replace employees
-Impact those employees working with them that can result in adding more work to them. This can increase stress and impact organization’s performance
+- Can have negative impact on your organization’s performance
+- Struggle to recruit new people
+- Hiring cost to replace employees
+- Impact those employees working with them that can result in adding more work to them. This can increase stress and impact organization’s performance
 
 
 ## Steps for Python implementation
@@ -24,5 +24,5 @@ Impact those employees working with them that can result in adding more work to 
    
      v) Attrition Rate - Attrition Rate vs Non-Attrition Rate in various features
    
-    ### vi) Key Insights
+    vi) ### Key Insights
    
