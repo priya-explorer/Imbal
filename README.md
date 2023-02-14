@@ -29,7 +29,7 @@
         
         - For Visualization,
         - iv) AUC: relation between true-positive rate and false positive rate
-        - v) Correlation Matrix
+        - v) Confusion Matrix
         
          
 ## Steps for Python implementation
@@ -42,7 +42,7 @@
   
     iii) Quality Analysis - Find Missing Value, Duplicates
  
-    iv) Correlation check
+    iv) Correlation check, Heap Mat
   
      v) Visualization - Bivariate, Multivariate Analysis on Numerical and Categorical features
    
@@ -73,6 +73,7 @@
    
    - 6) Performance Metrics used - F1 Score, Precision, Recall, AUC, Confusion Matrix 
          
+ ### On comparison of all the techniques, we find that best model is ' ' using performance metric. Using this prediction, we find the top 10 important features in the dataset
     
     
   
