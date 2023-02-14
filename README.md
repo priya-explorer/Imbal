@@ -13,22 +13,24 @@
 ## Imbalanced Classification
 - In this Classification problem, we try to predict the class label by studying the input data or predictor where the target(Attrition) feature is a categorical variable in nature. It is observed that the numbers of observations in class label 1(minority class) is significantly lower than other class label 0(majority class). And this type of dataset is called an imbalanced class dataset! Here, it is vital to identify the minority classes correctly.
 
-   ### Here we discuss, some of the techniques used to solve this imbalanced dataset problem. They are:
-     1) Resampling the training dataset - Using SMOTE(Oversampling) and UnderSampling
+   ### Here we discuss, some approaches used to solve this imbalanced dataset problem. They are:
+     1) Resampling the training dataset - Using SMOTE(Oversampling) and RandomUnderSampling
          
-       - After sampling the data we can get a balanced dataset for both majority and minority classes. So, when both classes have a similar number of records present in the dataset, we can assume that the classifier will give equal importance to both classes.
+        - After sampling the data we can get a balanced dataset for both majority and minority classes. So, when both classes have a similar number of records present in the dataset, we can assume that the classifier will give equal importance to both classes.
 
-         - SMOTE: Synthetic Minority Oversampling Technique or SMOTE. This technique is used to oversample the minority class. In this case, SMOTE looks into minority class instances and uses k nearest neighbor to select a random nearest neighbor, and new instances are synthesized from the existing data.
+        - SMOTE: Synthetic Minority Oversampling Technique or SMOTE. This technique is used to oversample the minority class. In this case, SMOTE looks into minority class instances and uses k nearest neighbor to select a random nearest neighbor, and new instances are synthesized from the existing data.
          
-         - RandomUnderSampling: Here, random rows from the majority class are deleted to match with the minority class. 
+        - RandomUnderSampling: Here, random rows from the majority class are deleted to match with the minority class. 
 
      2) Performance Metric
-         i) F1 score: harmonic mean of precision and recall
-        ii) Precision/Specificity: how many selected instances are relevant
-       iii) Recall/Sensitivity: how many relevant instances are selected
-     For Visualization,
-        iv) AUC: relation between true-positive rate and false positive rate
-         v) Correlation Matrix
+        - i) F1 score: harmonic mean of precision and recall
+        - ii) Precision/Specificity: how many selected instances are relevant
+        - iii) Recall/Sensitivity: how many relevant instances are selected
+        
+        - For Visualization,
+        - iv) AUC: relation between true-positive rate and false positive rate
+        - v) Correlation Matrix
+        
          
 ## Steps for Python implementation
 
@@ -60,12 +62,16 @@
          
          
 
-
-
-   1) Split the dataset into Train and Test dataset
-   2) 3 Algorithms used - Decision Tree, Random Forest, GBM
-   3) Model 1 notebook - 3 algorithms are used to predict the attrition
-   4) Moddel 2 notebook - 
+### Model Building
+   - 1) Split the dataset into Train and Test dataset - x_train, y_train, x_test, y_test
+   - 2) 3 Algorithms are used - Decision Tree, Random Forest, GBM
+   - 3) 'Model_1' notebook - 3 algorithms are used without Resampling the data
+   
+   -  With Resampling the training set,
+   - 4) 'Moddel_2_SMOTE' notebook - the SMOTE techinque is used to resample the the training data for the 3 algorithms
+   - 5) 'Model_3_Undersampling' notebook - the RandomUnderSampling is used to resample the the training data for the 3 algorithms
+   
+   - 6) Performance Metrics used - F1 Score, Precision, Recall, AUC, Confusion Matrix 
          
     
     
