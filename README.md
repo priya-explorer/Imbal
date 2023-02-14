@@ -12,17 +12,45 @@
 
 
 ## Steps for Python implementation
+
 ### 1) EDA
    
-     i) Load the data. Check the datatypes. 
+     i) Import neccessary libraries
+     
+    ii) Load the data. Check the datatypes. 
   
-    ii) Quality Analysis - Find Missing Value, Duplicates
+    iii) Quality Analysis - Find Missing Value, Duplicates
  
-    iii) Correlation check
+    iv) Correlation check
   
-    iv) Visualization - Bivariate, Multivariate Analysis on Numerical and Categorical features
+     v) Visualization - Bivariate, Multivariate Analysis on Numerical and Categorical features
    
-     v) Attrition Rate - Attrition Rate vs Non-Attrition Rate in various features
+    vi) Attrition Rate - Attrition Rate vs Non-Attrition Rate in various features
    
-    vi) ### Key Insights
+    vii) KEY INSIGHTS
+    
+    viii) Capping and Flooring of outliers
+    
+    ix)  Zero Variance check
+    
+    x)  Numerical and Categorical Feature Selection 
+    
+    xi) Split the data into 2 dataframes 
+         - Independent features dataframe - X
+         - Target feature(Attrition) dataframe - Y
+         
+         
+### Model Building
+- In this Classification problem we try to predict the class label by studying the input data or predictor where the target(Attrition) feature is a categorical variable in nature.
+- In this instance the numbers of observations in class label 1(minority class) is significantly lower than other class label 0(majority class). And this type of dataset is called an imbalanced class dataset! 
+- Here, it is vital to identify the minority classes correctly.
+
+   1) Split the dataset into Train and Test dataset
+   2) 3 Algorithms used - Decision Tree, Random Forest, GBM
+   3) Model 1 notebook - 3 algorithms are used to predict the attrition
+   4) Moddel 2 notebook - 
+         
+    
+    
+  
    
