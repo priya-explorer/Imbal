@@ -10,7 +10,13 @@
 - Hiring cost to replace employees
 - Impact those employees working with them that can result in adding more work to them. This can increase stress and impact organization’s performance
 
+## Imbalanced Classification
+- In this Classification problem, we try to predict the class label by studying the input data or predictor where the target(Attrition) feature is a categorical variable in nature. It is observed that the numbers of observations in class label 1(minority class) is significantly lower than other class label 0(majority class). And this type of dataset is called an imbalanced class dataset! Here, it is vital to identify the minority classes correctly.
 
+   ### Some of the few techniques used to solve this imbalaced dataset problem are:
+     1) Resampling - Using SMOTE(Oversampling) and UnderSampling
+
+Synthetic Minority Oversampling Technique or SMOTE is another technique to oversample the minority class. Simply adding duplicate records of minority class often don’t add any new information to the model. In SMOTE new instances are synthesized from the existing data. If we explain it in simple words, SMOTE looks into minority class instances and use k nearest neighbor to select a random nearest neighbor, and a synthetic instance is created randomly in feature space.
 ## Steps for Python implementation
 
 ### 1) EDA
@@ -40,11 +46,7 @@
          - Target feature(Attrition) dataframe - Y
          
          
-## Imbalanced Classification
-- In this Classification problem we try to predict the class label by studying the input data or predictor where the target(Attrition) feature is a categorical variable in nature. It is observed that the numbers of observations in class label 1(minority class) is significantly lower than other class label 0(majority class). And this type of dataset is called an imbalanced class dataset! Here, it is vital to identify the minority classes correctly.
 
-### Some of the few techniques used to solve this imbalaced dataset problem are:
-1) Resampling - Using SMOTE(Oversampling) and UnderSampling
 
 
    1) Split the dataset into Train and Test dataset
