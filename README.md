@@ -16,7 +16,7 @@
    ### Here we discuss, some of the techniques used to solve this imbalanced dataset problem. They are:
      1) Resampling the training dataset - Using SMOTE(Oversampling) and UnderSampling
          
-         - After sampling the data we can get a balanced dataset for both majority and minority classes. So, when both classes have a similar number of records present in the dataset, we can assume that the classifier will give equal importance to both classes.
+       - After sampling the data we can get a balanced dataset for both majority and minority classes. So, when both classes have a similar number of records present in the dataset, we can assume that the classifier will give equal importance to both classes.
 
          - SMOTE: Synthetic Minority Oversampling Technique or SMOTE. This technique is used to oversample the minority class. In this case, SMOTE looks into minority class instances and uses k nearest neighbor to select a random nearest neighbor, and new instances are synthesized from the existing data.
          
