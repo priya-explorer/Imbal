@@ -13,10 +13,23 @@
 ## Imbalanced Classification
 - In this Classification problem, we try to predict the class label by studying the input data or predictor where the target(Attrition) feature is a categorical variable in nature. It is observed that the numbers of observations in class label 1(minority class) is significantly lower than other class label 0(majority class). And this type of dataset is called an imbalanced class dataset! Here, it is vital to identify the minority classes correctly.
 
-   ### Some of the few techniques used to solve this imbalaced dataset problem are:
-     1) Resampling - Using SMOTE(Oversampling) and UnderSampling
+   ### Here we discuss, some of the techniques used to solve this imbalanced dataset problem. They are:
+     1) Resampling the training dataset - Using SMOTE(Oversampling) and UnderSampling
+         
+         - After sampling the data we can get a balanced dataset for both majority and minority classes. So, when both classes have a similar number of records present in the dataset, we can assume that the classifier will give equal importance to both classes.
 
-Synthetic Minority Oversampling Technique or SMOTE is another technique to oversample the minority class. Simply adding duplicate records of minority class often don’t add any new information to the model. In SMOTE new instances are synthesized from the existing data. If we explain it in simple words, SMOTE looks into minority class instances and use k nearest neighbor to select a random nearest neighbor, and a synthetic instance is created randomly in feature space.
+         - SMOTE: Synthetic Minority Oversampling Technique or SMOTE. This technique is used to oversample the minority class. In this case, SMOTE looks into minority class instances and uses k nearest neighbor to select a random nearest neighbor, and new instances are synthesized from the existing data.
+         
+         - RandomUnderSampling: Here, random rows from the majority class are deleted to match with the minority class. 
+
+     2) Performance Metric
+         i) F1 score: harmonic mean of precision and recall
+        ii) Precision/Specificity: how many selected instances are relevant
+       iii) Recall/Sensitivity: how many relevant instances are selected
+     For Visualization,
+        iv) AUC: relation between true-positive rate and false positive rate
+         v) Correlation Matrix
+         
 ## Steps for Python implementation
 
 ### 1) EDA
