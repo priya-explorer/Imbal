@@ -40,10 +40,12 @@
          - Target feature(Attrition) dataframe - Y
          
          
-### Model Building
-- In this Classification problem we try to predict the class label by studying the input data or predictor where the target(Attrition) feature is a categorical variable in nature.
-- In this instance the numbers of observations in class label 1(minority class) is significantly lower than other class label 0(majority class). And this type of dataset is called an imbalanced class dataset! 
-- Here, it is vital to identify the minority classes correctly.
+## Imbalanced Classification
+- In this Classification problem we try to predict the class label by studying the input data or predictor where the target(Attrition) feature is a categorical variable in nature. It is observed that the numbers of observations in class label 1(minority class) is significantly lower than other class label 0(majority class). And this type of dataset is called an imbalanced class dataset! Here, it is vital to identify the minority classes correctly.
+
+### Some of the few techniques used to solve this imbalaced dataset problem are:
+1) Resampling - Using SMOTE(Oversampling) and UnderSampling
+
 
    1) Split the dataset into Train and Test dataset
    2) 3 Algorithms used - Decision Tree, Random Forest, GBM
