@@ -73,7 +73,7 @@
    
    - 6) Performance Metrics used - F1 Score, Precision, Recall, AUC, Confusion Matrix 
          
- ### On comparison of all the techniques, we find that best model is ' ' using performance metric. Using this prediction, we find the top 10 important features in the dataset
+ ### On comparison of all the techniques, we find that best model is 'GBM' with RandomUnderSampling(for training data) using performance metrics such Recall, f1score, Precision, Confusion matrix . We also show, the top 10 important features in the dataset.
     
     
   
