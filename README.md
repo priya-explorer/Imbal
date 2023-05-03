@@ -62,7 +62,7 @@
          
          
 
-### Model Building
+### 2) Model Building
    - 1) Split the dataset into Train and Test dataset - x_train, y_train, x_test, y_test
    - 2) 3 Algorithms are used - Decision Tree, Random Forest, GBM
    - 3) 'Model_1' notebook - 3 algorithms are used without Resampling the data
